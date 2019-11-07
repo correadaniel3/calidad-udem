@@ -1,6 +1,7 @@
 package co.udem.automatizacion.stepdefinitions;
 
 import co.udem.automatizacion.page.RamaJudicialInicioPage;
+import co.udem.automatizacion.questions.TextoBarra;
 import cucumber.api.java.Before;
 import cucumber.api.java.es.Cuando;
 import cucumber.api.java.es.Dado;
@@ -24,6 +25,7 @@ import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClickable;
+import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.core.IsEqual.equalTo;
 
 
@@ -56,8 +58,8 @@ public class ConsultaProcesosSteps
 
 	@Entonces("debe poder activar la consulta")
 	public void verificarActivacionConsulta() {
-		theActorInTheSpotlight().should(seeThat("The displayed username",,
-				equalTo("")));
+		theActorInTheSpotlight().should(seeThat("The displayed username", TextoBarra.barra(),
+				containsString("Deslice la barra a la derecha para iniciar la consulta.")));
 	}
 
 }

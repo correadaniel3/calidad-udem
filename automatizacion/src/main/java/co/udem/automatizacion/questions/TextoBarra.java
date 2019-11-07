@@ -16,5 +16,9 @@ public class TextoBarra implements Question<String>
 		return TEXT_BARRA.resolveFor(actor).getText();
 	}
 
+	public static TextoBarra barra(){
+		return new TextoBarra();
+	}
+
 
 }

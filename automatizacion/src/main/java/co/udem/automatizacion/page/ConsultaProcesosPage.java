@@ -11,5 +11,5 @@ public class ConsultaProcesosPage extends PageObject
 	public static final Target SEL_ENTIDAD = Target.the("Select Box de entidad").locatedBy("//*[@id=\"ddlEntidadEspecialidad\"]");
 
 	public static final Target SEL_NRO_RADICADO = Target.the("Select Box de Entidad").located(By.xpath("//div[@id='divNumRadicacion']//tr[.//h1[contains(.,'Número de Radicación')]]/following-sibling::tr[1]//input"));
-	public static final Target TEXT_BARRA = Target.the("Select Box de Entidad").located(By.xpath("//*[@id=\"ConsultarNum\"]"));
+	public static final Target TEXT_BARRA = Target.the("Select Box de Entidad").located(By.id("ConsultarNum"));
 }

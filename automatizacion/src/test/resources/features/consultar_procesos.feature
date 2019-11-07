@@ -8,5 +8,5 @@
 
   Escenario: Consultar el proceso judicial 0000000000
     Dado que "David" esta consultando el proceso judicial
-    Cuando selecciona Ciudad "MEDELLIN", entidad "TRIBUNAL ADMINIOSTRATIVO DE ANTIOQUIA (ESCRITURAL)" y numero de radicado "0000000000"
+    Cuando selecciona Ciudad "MEDELLIN", entidad "TRIBUNAL ADMINISTRATIVO DE ANTIOQUIA (ESCRITURAL)" y numero de radicado "0000000000"
     Entonces debe poder activar la consulta
